@@ -12,19 +12,22 @@ app.use(bodyParser.urlencoded({ extended: false}));
 
 
 app.get('/index', (req, res) => {
-    //console.log('res', res);
+    console.log('res', res);
     res.send('Hello Index!');
   })
 
   app.post('/create', (req, res) => {
+    console.log('res', res);
     res.send('Hello Create!')
   })
 
   app.delete('/remove', (req, res) => {
+    console.log('res', res);
     res.send('Hello Delete!')
   })
 
   app.put('/update', (req, res) => {
+    console.log('res', res);
     res.send('Hello Update!')
   })
 
